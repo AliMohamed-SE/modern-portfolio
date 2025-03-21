@@ -2,7 +2,7 @@ export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Services", link: "#services" },
-  { name: "Testimonials", link: "#testimonials" },
+  // { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -73,6 +73,20 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "EFG Hermes X KidZania Stock Market App",
+    des: "A kids stock trading application for investment awareness and education in collaboration with EFG Hermes and KidZania",
+    img: "/stockMarket.svg",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/mongo.svg",
+      "/cloudinary.svg",
+    ],
+    link: "https://efgstockmarket.replit.app/",
+  },
+  {
+    id: 2,
     title: "Healthcare Patient Management System",
     des: "allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications.",
     img: "/CarePulse.svg",
@@ -86,7 +100,7 @@ export const projects = [
     link: "https://careplus-five.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "AI Prompt Sharing App",
     des: "A comprehensive CRUD AI Prompt sharing system utilizing a MongoDB database and implementing NextAuth.",
     img: "/Promptopia.svg",
@@ -94,20 +108,12 @@ export const projects = [
     link: "https://project-promptopia-mseo.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "XORA - SaaS Landing Page",
     des: "Xora is a Modern UI/UX SaaS website. With sleek design, seamless animations, and exceptional user experience",
     img: "/XORA.svg",
     iconLists: ["/re.svg", "/tail.svg", "/vite.svg"],
     link: "https://github.com/AliMohamed-SE/XORA-SaaS-Landing-Page",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
   },
 ];
 
@@ -221,12 +227,12 @@ export const socialMedia = [
     link: "https://x.com/AliMohamed_Dev",
     img: "/twit.svg",
   },
-  // {
-  //   id: 3,
-  //   title: "linkedin",
-  //   link: "https://www.linkedin.com/in/ali-saad-othman/",
-  //   img: "/link.svg",
-  // },
+  {
+    id: 3,
+    title: "linkedin",
+    link: "https://www.linkedin.com/in/ali-saad-othman/",
+    img: "/link.svg",
+  },
 ];
 
 export const leftTechStack = ["React.js", "Next.js", "NodeJs"];
