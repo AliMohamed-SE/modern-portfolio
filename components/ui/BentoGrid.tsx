@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import { GridGlobe } from "./GridGlobe";
-import { leftTechStack, rightTechStack } from "@/data";
+import { leftTechStack, middleTechStack, rightTechStack } from "@/data";
 import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from "@/data/confetti.json";
@@ -129,6 +129,16 @@ export const BentoGridItem = ({
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
                 <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]" />
+                {middleTechStack.map((item) => (
+                  <span
+                    key={item}
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+              <div className="flex flex-col gap-3 lg:gap-8">
                 {rightTechStack.map((item) => (
                   <span
                     key={item}
@@ -137,6 +147,8 @@ export const BentoGridItem = ({
                     {item}
                   </span>
                 ))}
+
+                <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]" />
               </div>
             </div>
           )}

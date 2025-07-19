@@ -50,7 +50,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a Massively Scalable Microservices App",
+    title: "Currently building an AI-Powered Learning Platform",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -75,21 +75,38 @@ export const projects = [
     id: 1,
     title: "EFG Hermes X KidZania Stock Market App",
     des: "A kids stock trading application for investment awareness and education in collaboration with EFG Hermes and KidZania",
-    img: "/stockMarket.svg",
+    img: "/stockmarket.svg",
     iconLists: [
       "/re.svg",
       "/tail.svg",
       "/ts.svg",
       "/mongo.svg",
       "/cloudinary.svg",
+      "/replit.svg",
     ],
     link: "https://efgstockmarket.replit.app/",
   },
   {
     id: 2,
+    title: "Lifecare Egypt",
+    des: "Discover Lifecare Pharma's portfolio of high-quality fillers and cosmetic solutions from international partners like INFINI, CellGenic, and SRS. Serving aesthetic doctors in Egypt.",
+    img: "/lifecare-egypt.svg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/aws.svg"],
+    link: "https://lifecaregypt.link/",
+  },
+  {
+    id: 4,
+    title: "Evander Creative Studio",
+    des: "A software solutions studio that craft custom digital solutions that merge cutting-edge technology, intelligent automation, and eye-catching design to help businesses grow, scale, and stand out.",
+    img: "/evander.svg",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/figma.svg", "/aws.svg"],
+    link: "https://www.evandercs.com/",
+  },
+  {
+    id: 4,
     title: "Healthcare Patient Management System",
     des: "allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications.",
-    img: "/CarePulse.svg",
+    img: "/careplus.png",
     iconLists: [
       "/next.svg",
       "/tail.svg",
@@ -100,7 +117,7 @@ export const projects = [
     link: "https://careplus-five.vercel.app/",
   },
   {
-    id: 3,
+    id: 5,
     title: "AI Prompt Sharing App",
     des: "A comprehensive CRUD AI Prompt sharing system utilizing a MongoDB database and implementing NextAuth.",
     img: "/Promptopia.svg",
@@ -108,7 +125,7 @@ export const projects = [
     link: "https://project-promptopia-mseo.vercel.app/",
   },
   {
-    id: 4,
+    id: 6,
     title: "XORA - SaaS Landing Page",
     des: "Xora is a Modern UI/UX SaaS website. With sleek design, seamless animations, and exceptional user experience",
     img: "/XORA.svg",
@@ -186,31 +203,31 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Technical Lead",
-    desc: "Led a team of engineers in the design, development, and deployment of a scalable e-commerce platform. Managed ongoing maintenance and feature upgrades using agile methodologies to ensure continuous improvement.",
+    title: "Chief Technology Officer (CTO)",
+    desc: "Established and led the technology vision and architecture for a startup from the ground up. Oversaw end-to-end product development, team recruitment, DevOps infrastructure, and long-term scalability strategy. Delivered enterprise-grade solutions while aligning with business goals and market needs.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/exp2.svg",
   },
   {
     id: 2,
-    title: "Software Engineer",
-    desc: "Contributed to the full software development lifecycle of web applications using .NET Core and Blazor. Focused on creating efficient, scalable, and maintainable solutions for enterprise clients.",
+    title: "Technical Team Lead",
+    desc: "Directed cross-functional engineering teams in building scalable web applications. Acted as the bridge between technical implementation and strategic planning. Fostered agile practices, code quality standards, and continuous integration to ensure high delivery velocity and system reliability.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 3,
-    title: "AI Solutions Developer",
-    desc: "Developed and integrated AI-driven solutions across multiple client projects, including chatbot systems and large language models to enhance user interaction and automate business processes.",
+    title: "Senior Software Engineer (Full-time & Contract)",
+    desc: "Delivered robust backend and frontend systems in both collaborative and independent settings. Designed scalable APIs, integrated cloud platforms (AWS, Azure), and contributed to high-impact projects using modern stacks.",
     className: "md:col-span-2",
-    thumbnail: "/exp2.svg",
+    thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Freelance Web Application Developer",
-    desc: "Spearheaded the development of a custom web application for a client, overseeing the entire project from concept to deployment. Utilized cloud hosting services to ensure optimal performance and scalability.",
+    title: "Freelance Software Consultant & Full-Stack Developer",
+    desc: "Worked closely with startups and SMEs to build custom solutions tailored to business goals. Offered end-to-end services including system architecture, UX design, and deployment. Projects included e-commerce platforms, management dashboards, and API integrations.",
     className: "md:col-span-2",
-    thumbnail: "/exp3.svg",
+    thumbnail: "/exp4.svg",
   },
 ];
 
@@ -235,8 +252,9 @@ export const socialMedia = [
   },
 ];
 
-export const leftTechStack = ["React.js", "Next.js", "NodeJs"];
-export const rightTechStack = [".Net Core", "Databases", "Laravel"];
+export const leftTechStack = ["React", "Next.js", "NestJS"];
+export const middleTechStack = ["NoSQL", "SQL", "ORM"];
+export const rightTechStack = ["AWS", "Docker", "Redis"];
 
 export const approachData = [
   {
