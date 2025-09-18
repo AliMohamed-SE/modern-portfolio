@@ -95,7 +95,7 @@ export const projects = [
     link: "https://lifecaregypt.link/",
   },
   {
-    id: 4,
+    id: 3,
     title: "Evander Creative Studio",
     des: "A software solutions studio that craft custom digital solutions that merge cutting-edge technology, intelligent automation, and eye-catching design to help businesses grow, scale, and stand out.",
     img: "/evander.svg",

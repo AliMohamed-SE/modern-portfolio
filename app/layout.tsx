@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "../styles/globals.css";
 
 import { ThemeProvider } from "./provider";
+import Chatbot from "@/components/Chatbot/Chatbot";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -10,29 +11,24 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default:
-      "Ali Mohamed's Portfolio | Solution Architect & Full Stack Developer",
+    default: "Ali Mohamed | Full Stack Developer & AI Solutions Architect",
     template: "%s | Ali Mohamed Portfolio",
   },
   description:
-    "Explore the modern, minimalist portfolio of Ali Mohamed – Solution Architect, Full Stack Developer, and Tech Enthusiast. Showcasing projects, experience, and services in web development, System Architecture, and technology.",
+    "Portfolio of Ali Mohamed – Full Stack Developer and AI Solutions Architect. Showcasing expertise in web development, system architecture, and AI-powered applications.",
   keywords: [
     "Ali Mohamed",
-    "Portfolio",
-    "Solution Architect",
     "Full Stack Developer",
-    "Web Developer",
-    "UI/UX Designer",
-    "JavaScript",
-    "Node.js",
-    "React",
+    "AI Developer",
+    "AI Solutions Architect",
+    "React Developer",
+    "Node.js Developer",
     "Next.js",
-    "Frontend",
-    "Backend",
-    "Projects",
-    "Minimalist Design",
-    "Modern Web",
-    "Tech Enthusiast",
+    "Nest.js",
+    "Web Applications",
+    "Generative AI",
+    "Chatbot Developer",
+    "Software Engineer",
   ],
   authors: [{ name: "Ali Mohamed", url: "https://alimohamed-dev.vercel.app/" }],
   creator: "Ali Mohamed",
@@ -40,10 +36,9 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title:
-      "Ali Mohamed's Portfolio | Solution Architect & Full Stack Developer",
+    title: "Ali Mohamed | Full Stack Developer & AI Solutions Architect",
     description:
-      "Discover the work and expertise of Ali Mohamed, a passionate Solution Architect & Full Stack Developer. Explore projects, skills, and services.",
+      "Discover the work of Ali Mohamed, a passionate Full Stack Developer & AI Solutions Architect. Explore projects in modern web development and AI-powered systems.",
     url: "https://alimohamed-dev.vercel.app/",
     siteName: "Ali Mohamed Portfolio",
     images: [
@@ -59,10 +54,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Ali Mohamed's Portfolio | Solution Architect & Full Stack Developer",
+    title: "Ali Mohamed | Full Stack Developer & AI Solutions Architect",
     description:
-      "Explore the modern, minimalist portfolio of Ali Mohamed – Full Stack Developer, UI/UX Designer, and Tech Enthusiast.",
+      "Explore the modern portfolio of Ali Mohamed – Full Stack Developer and AI Solutions Architect. Showcasing AI-powered apps, web projects, and solutions.",
     creator: "@AliMohamed_Dev",
     images: ["/op-personal.png"],
   },
@@ -74,7 +68,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} antialiased`}>
         {" "}
         <ThemeProvider
@@ -83,7 +77,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <main>{children}</main>
+          <Chatbot />
         </ThemeProvider>
       </body>
     </html>

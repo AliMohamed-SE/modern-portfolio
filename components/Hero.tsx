@@ -23,16 +23,18 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Turn your ideas to reality
+            Building the Future with Code & AI
           </h2>
+
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Crafting Intelligent, Scalable, and Human-Centered Solutions"
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Ali, a Solution Architect & Full Stack Developer based
-            in Egypt.
+            Hi, I&apos;m Ali, a Full Stack & AI Solutions Architect based in
+            Egypt, passionate about turning complex ideas into seamless digital
+            experiences.
           </p>
 
           <a href="#projects">
